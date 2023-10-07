@@ -23,7 +23,7 @@
       <!-- header -->
       <header>
         <div>
-          <h1><a href="index.html">ERGİNEER BAR VE MANGAL</a></h1>
+          <a href="index.html"><h1>ERGİNEER BAR VE MANGAL</h1></a>
           <!-- nav -->
         </div>
         <nav>
@@ -35,9 +35,15 @@
           </div>
 
           <div class="socialmedia">
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-brands fa-square-instagram"></i>
-            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-square-facebook"
+              ><img src="./img/facebook.svg" alt=""
+            /></i>
+            <i class="fa-brands fa-square-instagram"
+              ><img src="./img/instagram.svg" alt=""
+            /></i>
+            <i class="fa-brands fa-square-x-twitter"
+              ><img src="./img/twitter.svg" alt=""
+            /></i>
           </div>
         </nav>
       </header>
@@ -46,15 +52,17 @@
       <section class="gallery">
         <div>
           <h2>YEMEKLERİMİZ</h2>
-          <img src="img/food-avocadotoast.jpg" alt="" />
-          <img src="img/food-burger.jpg" alt="" />
-          <img src="img/food-poutine.jpg" alt="" />
-          <img src="img/food-ribs.jpg" alt="" />
-          <img src="img/food-sandwich.jpg" alt="" />
-          <img src="img/food-sausage.jpg" alt="" />
-          <img src="img/food-steak.jpg" alt="" />
-          <img src="img/food-tacos.jpg" alt="" />
-          <img src="img/food-wings.jpg" alt="" />
+          <div class="fotos">
+            <img src="img/food-avocadotoast.jpg" alt="avakado" />
+            <img src="img/food-burger.jpg" alt="food-burger" />
+            <img src="img/food-poutine.jpg" alt="food-poutine" />
+            <img src="img/food-ribs.jpg" alt="food-ribs" />
+            <img src="img/food-sandwich.jpg" alt="food-sandwich" />
+            <img src="img/food-sausage.jpg" alt="Sausage" />
+            <img src="img/food-steak.jpg" alt="food-steak" />
+            <img src="img/food-tacos.jpg" alt="food-tacos" />
+            <img src="img/food-wings.jpg" alt="food-wings" />
+          </div>
         </div>
       </section>
 
@@ -136,15 +144,11 @@
       <!-- footer -->
       <footer>
         <!-- email signup -->
-        <label for="email">Mail listemize katılın!</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="E-posta Adresi"
-        />
-        <button>Üye Ol</button>
-
+        <div class="mail">
+          <p>Mail listemize katılın!</p>
+          <input type="text" placeholder="E-posta Adresi" />
+          <button>Üye Ol</button>
+        </div>
         <!-- nav -->
         <nav>
           <a href="menu.html">Menü</a>
@@ -153,7 +157,9 @@
           <a href="">İletişim</a>
         </nav>
         <!-- copyright -->
-        ©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+        <div class="copyright">
+          <p>©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+        </div>
       </footer>
     </div>
   </body>

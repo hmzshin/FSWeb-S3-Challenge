@@ -158,6 +158,7 @@ i {
 
 h1 {
   font-size: 7.5rem;
+  color: antiquewhite;
 }
 
 h2 {
@@ -167,11 +168,13 @@ h2 {
 
 h3 {
   font-size: 5rem;
+  color: white;
 }
 
 p,
 a {
   font-size: 3rem;
+  color: white;
 }
 
 /* header section */
@@ -183,10 +186,26 @@ header {
   background-position: center;
   background-repeat: no-repeat;
 }
+header div {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 4, 17);
+  opacity: 0.8;
+}
+header nav div {
+  justify-content: space-around;
+}
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
 nav img {
   height: 50px;
   width: 50px;
+  padding: 5px;
   object-fit: cover;
+  background-color: white;
 }
 /* spacers */
 .spacer {
@@ -197,7 +216,7 @@ nav img {
 .spacer-sm {
   width: 100%;
   height: 10vh;
-  background-color: rgb(0, 4, 17);
+  background-color: rgba(0, 4, 17);
 }
 
 /* gallery section */
@@ -206,6 +225,19 @@ nav img {
   height: 100vh;
   text-align: center;
   background-color: rgb(0, 4, 17);
+}
+section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .fotos {
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  gap: 50px;
 }
 
 /* about us section */
@@ -267,6 +299,7 @@ nav img {
 .info {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -289,6 +322,45 @@ footer {
   height: 15vh;
   padding-top: 2.5vh;
   font-size: 3rem;
+  background-color: rgb(0, 4, 17);
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .mail {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+footer .mail p {
+  height: 49%;
+  padding-bottom: 5px;
+}
+footer .mail input {
+  height: 40%;
+  width: 70%;
+}
+footer .mail button {
+  width: 18%;
+  height: 40%;
+  font-weight: bold;
+}
+footer nav {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  background-color: rgb(0, 4, 17);
+  width: 100%;
+  align-items: end;
+}
+
+.copyright p {
+  padding-right: 100px;
+  text-align: end;
+  font-size: 2rem;
 }
 
 /* mobile media query */
@@ -313,6 +385,7 @@ footer {
 
   .about-container .text {
     width: 85%;
+    color: white;
   }
 
   /* contact us section */
@@ -343,5 +416,6 @@ footer {
     height: auto;
     padding-top: 2.5vh;
     font-size: 2rem;
+    background-color: black;
   }
 }
