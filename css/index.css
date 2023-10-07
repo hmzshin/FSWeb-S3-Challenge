@@ -239,6 +239,15 @@ section .fotos {
   align-content: center;
   gap: 50px;
 }
+.box {
+  height: 300px;
+  width: 400px;
+}
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* about us section */
 .about {
@@ -361,6 +370,33 @@ footer nav {
   padding-right: 100px;
   text-align: end;
   font-size: 2rem;
+}
+@media (max-width: 1650px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .box {
+    height: 300;
+    width: 400x;
+  }
+}
+/* tablet tasarımı */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .box {
+    height: 200x;
+    width: 200x;
+  }
+}
+/* large screen */
+@media (max-width: 800px) {
+  .box {
+    height: 200px;
+    width: 150px;
+    gap: 0px;
+  }
 }
 
 /* mobile media query */
