@@ -134,14 +134,17 @@ table {
 
 html {
   max-width: 1920px;
-  min-width: 428px;
-  width: 100%;
+  width: 100vw;
   font-size: 62.5%;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
+  width: 100%;
+}
+.bigBox {
+  width: 100%;
 }
 
 h1,
@@ -195,10 +198,14 @@ header div {
 header nav div {
   justify-content: space-around;
 }
+.headerNav {
+  flex-wrap: wrap;
+}
 .socialmedia {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  width: 100%;
+  gap: 30px;
 }
 nav img {
   height: 50px;
@@ -222,7 +229,7 @@ nav img {
 /* gallery section */
 .gallery {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   background-color: rgb(0, 4, 17);
 }
@@ -232,7 +239,7 @@ section div {
   align-items: center;
 }
 section .fotos {
-  width: 80%;
+  width: 90%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -261,7 +268,7 @@ section .fotos {
 }
 
 .about-container {
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -269,12 +276,14 @@ section .fotos {
   background-color: rgb(0, 4, 17, 0.8);
 }
 
-.about h2 {
+.about h2 h3 p {
   width: 100%;
 }
 
 .about-container .text {
-  width: 50%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* contact us section */
@@ -358,6 +367,7 @@ footer .mail button {
 footer nav {
   width: 55%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .copyright {
@@ -371,56 +381,92 @@ footer nav {
   text-align: end;
   font-size: 2rem;
 }
-@media (max-width: 1650px) {
-  h1 {
-    font-size: 5rem;
-  }
-  .box {
-    height: 300;
-    width: 400x;
-  }
-}
-/* tablet tasarımı */
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 5rem;
-  }
-  .box {
-    height: 200x;
-    width: 200x;
-  }
-}
-/* large screen */
-@media (max-width: 800px) {
-  .box {
-    height: 200px;
-    width: 150px;
-    gap: 0px;
-  }
-}
 
 /* mobile media query */
 @media (max-width: 428px) {
   /* header section */
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .contact h2 {
+    padding-top: 0vh;
+  }
 
+  .headerNav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .headerNav a {
+    display: block;
+    font-size: 2rem;
+  }
+  .socialmedia i {
+    height: 100%;
+    width: 30px;
+    padding: 0 0 10px 0;
+  }
+  .socialmedia img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
   /* gallery section */
   .gallery {
     height: auto;
+  }
+  .box {
+    width: 250px;
   }
 
   /* about us section */
 
   .about {
-    height: 200vh;
+    height: 100vh;
   }
 
   .about h2 {
     width: 100%;
-    padding-top: 5vh;
+    padding-top: 1vh;
+  }
+  .about h3 {
+    font-size: 3rem;
+  }
+  .about p {
+    height: 50%;
+    width: 80%;
+    font-size: 2rem;
+    text-wrap: wrap;
   }
 
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
   .about-container .text {
-    width: 85%;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
     color: white;
   }
 
@@ -453,5 +499,42 @@ footer nav {
     padding-top: 2.5vh;
     font-size: 2rem;
     background-color: black;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .mail {
+    width: 100%;
+  }
+  footer .mail p {
+    font-size: 2rem;
+    padding-bottom: 5px;
+  }
+  footer .mail input {
+    width: 60%;
+  }
+
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .headerNav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+  }
+
+  .copyright {
+    align-items: center;
+  }
+
+  .copyright p {
+    padding: 0px;
+    text-align: center;
+    font-size: 1rem;
   }
 }
